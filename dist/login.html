@@ -16,7 +16,7 @@
                 <input id="password" type="password" name="" placeholder="Password"> 
                 <input onclick="login()" type="submit" name="" value="Login">  
                 <p id="fail" class="text-muted" style="display:none;"> Incorrect login!</p>  
-                <a class="forgot text-muted" href="#">Register</a> 
+                <a class="forgot text-muted" href="./register.html">Register</a> 
                 <br>
                 <br>
             <div class="col-md-12">
@@ -29,4 +29,19 @@
         </form>
 </div>
 
-<script src="js/login.js"></script>
+<script>
+    function login() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if ((username == "volunteer") && (password == "123")) {
+            location.href = 'map.html';
+        }
+        else if ((username == "user") && (password == "123")) {
+            location.href = 'map.html';
+        }
+        else {
+            document.getElementById("fail").style.display = "block";
+        }
+    }
+</script>

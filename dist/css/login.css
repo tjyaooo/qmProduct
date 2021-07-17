@@ -130,3 +130,22 @@ a.socialIcon:hover,
     transition: all 0.8s;
     transition: all 0.8s
 }
+
+#volunteer, #user {
+    background: none;
+    position: relative;
+    display: inline;
+    margin: 0px;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 5px 14px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+#volunteer:hover, #user:hover {
+    background: #2ecc71
+}
