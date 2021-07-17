@@ -10,16 +10,6 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #map {
-            height: calc(100vh - 300px);
-        }
-    </style>
 </head>
 
 <body>
@@ -44,52 +34,37 @@
             </nav>
             <!-- Page content-->
             <div class="container-fluid">
-                <h1 class="mt-4">Dashboard</h1>
-                <p>2 people now are in need of help!</p>
+                <h1 class="mt-4">Send help to 26, Jalan Tualang</h1>
+                <ol>
+                    <li>
+                        <p>Please list the items you wish to deliver.</p>
+                        <textarea style='width:75%;'></textarea> 
+                        <br>
+                        Please ensure items listed are appropriate. <u>List of appropriate items</u>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Write your username clearly on a piece of paper/on the packaging.</p>
+                    </li>
+                    <li>
+                        <p>Drop off your package at the location specified.</p>
+                    </li>
+                    <li>
+                        <p>Ensure your package is left in a safe location before leaving.</p>
+                    </li>
+                </ol>
                 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
                 </head>
 
                 <body>
-                    <div id="map"></div>
                     <br>
                     <div id="select" class="container-fluid">
-                        <a href='./procedure.html'><button class="btn btn-primary" id="sidebarToggle">Select User</button></a>
+                        <a href='./#'><button class="btn btn-primary" id="sidebarToggle">Proceed</button></a>
                     </div>
                 </body>
             </div>
         </div>
     </div>
-    <!-- Mapbox scripts -->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
-    <script>
-        mapboxgl.accessToken = "pk.eyJ1IjoiZGFuMTIzNDU2IiwiYSI6ImNrMGNpYmluaTE1bnozbXBseWN6enVhaDUifQ.0ASPM9rudsbHpFrJ63_1ig";
-        let map = new  mapboxgl.Map({
-            container: 'map',
-            center: [101.68, 3.139],
-            zoom: 13,
-            style: 'mapbox://styles/mapbox/streets-v11'
-        });
-
-        let marker1 = new mapboxgl.Marker({ "color": "#FF8C00" });
-        marker1.setLngLat([101.66943025633309, 3.141166637599792]);
-
-        let popup1 = new mapboxgl.Popup({ offset: 45});
-        popup1.setText('26, Jalan Tualang');
-        marker1.setPopup(popup1)
-        // Display the marker.
-        marker1.addTo(map);
-
-        let marker2 = new mapboxgl.Marker({ "color": "#FF8C00" });
-        marker2.setLngLat([101.674964, 3.133953]);
-
-        let popup2 = new mapboxgl.Popup({ offset: 45});
-        popup2.setText('82, Jalan Limau Kasturi');
-        marker2.setPopup(popup2)
-        // Display the marker.
-        marker2.addTo(map);
-
-    </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
