@@ -23,7 +23,6 @@
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="map.html">Maps</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Messages</a>
             </div>
         </div>
@@ -36,14 +35,17 @@
                 </div>
             </nav>
             <!-- Page content-->
-            <div class="container-fluid">
+            <div class="container-fluid" style="height: 650px">
                 <h1 class="mt-4">Send help to 26, Jalan Tualang</h1>
+                How do you wish to help? You can:
+                <br><br>
+                <h5>Deliver a help package to brighten his/her day.</h5>
                 <ol>
                     <li>
                         <p>Please list the items you wish to deliver.</p>
                         <textarea style='width:75%;'></textarea>
                         <br>
-                        Please ensure items listed are appropriate. <u>List of appropriate items</u>
+                        Please ensure items listed are <b>not</b> inappropriate. <u>List of inappropriate items</u>
                     </li>
                     <br>
                     <li>
@@ -56,14 +58,13 @@
                         <p>Ensure your package is left in a safe location before leaving.</p>
                     </li>
                 </ol>
+                <a href='./#'><button class="inline btn btn-primary" id="proceedButton">Proceed</button></a>
+                <br><br>
+                <h5>Or send them a message to ask what they need.</h5>
+                <p>Sometimes, all we need is someone to talk to.</p>
                 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
                 </head>
-
-                <div id="buttons" style = "width:400px; margin:auto;">
-                    <a href='message.html'><button class="inline btn btn-primary" id="messageButton">Send Message</button></a>
-                    <a href='./#'><button class="inline btn btn-primary" id="proceedButton">Proceed</button></a>
-                </div>
-
+                <a href='message.html'><button class="inline btn btn-primary" id="messageButton">Send Message</button></a>
             </div>
         </div>
     </div>
