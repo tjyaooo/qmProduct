@@ -3958,6 +3958,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  height:58px;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -7430,7 +7431,7 @@ textarea.form-control-lg {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #f0f0f0 !important;
 }
 
 .bg-dark {
@@ -7443,6 +7444,10 @@ textarea.form-control-lg {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-gray {
+  background-color: #d7d7d7 !important;
 }
 
 .bg-transparent {
@@ -10855,6 +10860,7 @@ textarea.form-control-lg {
 }
 
 #sidebar-wrapper {
+  height:59px;
   min-height: 100vh;
   margin-left: -15rem;
   transition: margin 0.25s ease-out;
