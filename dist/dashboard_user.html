@@ -16,7 +16,7 @@
             }
     
             #map {
-                height: calc(100vh - 350px);
+                height: calc(100vh - 320px);
             }
         </style>
     </head>
@@ -29,8 +29,8 @@
                       User
                 </div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Dashboard</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#">Profile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard_user.html">Dashboard</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="profile_user.html">Profile</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="message_user.html">Messages</a>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                 <!-- Page content-->
                 <div class="container-fluid">
                     <h1 class="mt-4">Need help?</h1>
-                    <p>How long do you want to ask for help?</p>
+                    <!-- <p>How long do you want to ask for help?</p>
                     <select style="width:15%;">
                         <option>1 hour</option>
                         <option>2 hours</option>
@@ -54,12 +54,15 @@
                         <option>12 hours</option>
                         <option>1 day</option>
                     </select>
-                    <br><br>
+                    <br><br> -->
                     
                     <p>Verify your location:</p>
                     <div id="map"></div>
                     <br>
                     <div id="select" class="container-fluid">
+                        <input type="checkbox" id="anon" checked>
+                        <label for="anon"> Remain anonymous</label>
+                        <br><br>
                         <a href='./verify.html'><button class="btn btn-primary" id="sidebarToggle">Ask for help</button></a>
                     </div>
                 </div>
