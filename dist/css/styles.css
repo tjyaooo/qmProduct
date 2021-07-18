@@ -5132,12 +5132,12 @@ textarea.form-control-lg {
 }
 
 .list-group-item-light {
-  color: #636464;
-  background-color: #fefefe;
+  color: #b1b1b1;
+  background-color: #1d2734;
 }
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-  color: #636464;
-  background-color: #e5e5e5;
+  color: #d4d3d3;
+  background-color: #293749;
 }
 .list-group-item-light.list-group-item-action.active {
   color: #fff;
@@ -7448,6 +7448,10 @@ textarea.form-control-lg {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-darkblue {
+  background-color: #1d2734 !important;
 }
 
 .bg-gray {
@@ -10873,6 +10877,8 @@ textarea.form-control-lg {
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;
+  height: 100px;
+  color: white;
 }
 
 #sidebar-wrapper .list-group {
