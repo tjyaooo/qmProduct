@@ -12,17 +12,13 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
 
-        p {
+        /* p {
             color: #404F5E;
             font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
             font-size: 20px;
             margin: 0;
-        }
+        } */
 
         .box {
             padding: 2rem;
@@ -54,28 +50,67 @@
             <!-- Top navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <div class="container-fluid">
-                    <button class="btn btn-primary" id="sidebarToggle">Open Menu</button>
+                    <img src="assets/button.png" id="sidebarToggle" style="width:35px; margin:0px 0px 0px 10px; cursor:pointer;"></img>
+                    <p style="position:absolute; top:8px; left:70px; font-size: 25px;">OurSejahtera</p>
+                    <div class="dropdown" style="position:absolute; top:15px; right:40px;">
+                        <p>Logged in as: 
+                            <img src="assets/user_icon.png" style="width:20px; margin:0px 0px 4px 0px;"></img>
+                             username
+                        </p>
+                        <div class="dropdown-content">
+                            <a href="login.html">
+                                <img src="assets/logout.png" style="width:20px;"></img>  Logout</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
+
             <!-- Page content-->
             <div style="padding:1rem;">
-                <h5 style="font-size: 2rem;">Items to be received!</h5>
-                <p>As promised by volunteers</p>
-                <p>Check items after receiving</p>
-                <ol>
-                    <li>
-                        <p>Play Station 5 <input type="checkbox"></p>
-                    </li>
-                    <li>
-                        <p>Sony Plasma TV <input type="checkbox"></p>
-                    </li>
-                    <li>
-                        <p>iPhone 10 <input type="checkbox"></p>
-                    </li>
-                    <li>
-                        <p>Rice Cooker <input type="checkbox"></p>
-                    </li>
-                </ol>
+                <h5 style="font-size: 2rem;">Items to be received</h5>
+                <p>Volunteers have promised to deliver:</p>
+                <table class="table table-hover">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Delivered by</th>
+                        <th scope="col">Received</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Gardenia bread</td>
+                        <td>2 loaves</td>
+                        <td>@johndoe</td>
+                        <td><input type="checkbox" checked></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Nasi lemak</td>
+                        <td>5 pcs</td>
+                        <td>@volunteer</td>
+                        <td><input type="checkbox"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>100 plus</td>
+                        <td>2 cartons</td>
+                        <td>@volunteer</td>
+                        <td style="align-content: center;"><input type="checkbox"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Rice cooker</td>
+                        <td>1</td>
+                        <td>@goodguy</td>
+                        <td><input type="checkbox"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <p>Please check the items after receiving.</p>
                 <a href='' style="padding: 1rem;"><button class="btn btn-primary" id="sidebarToggle">Save Changes</button></a>
             </div>
 

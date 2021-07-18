@@ -12,17 +12,6 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        p {
-            color: #404F5E;
-            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-            font-size: 20px;
-            margin: 0;
-        }
 
         .box{
             padding:2rem;
@@ -55,14 +44,36 @@
             <!-- Top navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <div class="container-fluid">
-                    <button class="btn btn-primary" id="sidebarToggle">Open Menu</button>
+                    <img src="assets/button.png" id="sidebarToggle" style="width:35px; margin:0px 0px 0px 10px; cursor:pointer;"></img>
+                    <p style="position:absolute; top:8px; left:70px; font-size: 25px;">OurSejahtera</p>
+                    <div class="dropdown" style="position:absolute; top:15px; right:40px;">
+                        <p>Logged in as: 
+                            <img src="assets/user_icon.png" style="width:20px; margin:0px 0px 4px 0px;"></img>
+                             username
+                        </p>
+                        <div class="dropdown-content">
+                            <a href="login.html">
+                                <img src="assets/logout.png" style="width:20px;"></img>  Logout</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <!-- Page content-->
 
             <div class="box">
-                <h1>Success &#x2705</h1>
-                <p>Nearby volunteers and helpers have been notified. <br /> They will try their best to help you!</p>
+                <div style="margin-top: 100px; text-align: center; font-size: 5rem;">
+                    <div>Success &#x2705</div>
+                </div>
+                <br><br>
+                <div style="text-align: center; padding-left: 1.1rem; margin:auto; font-size: 1.2rem; padding-top:1rem;">
+                    Nearby volunteers and helpers have been notified. <br>
+                    They will try their best to help you!
+                </div>
+                
+                <br><br>
+                <div id="select" class="container-fluid">
+                    <a href='./dashboard_user.html'><button class="btn btn-primary" id="sidebarToggle">Back</button></a>
+                </div>
             </div>
 
         </div>
