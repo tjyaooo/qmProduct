@@ -49,6 +49,10 @@
   }
 }
 
+.logo{
+  font-family: 'Abel', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
