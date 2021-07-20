@@ -20,7 +20,7 @@
         }
 
         #map {
-            height: calc(100vh - 320px);
+            height: 40vh;
         }
     </style>
 </head>
@@ -30,17 +30,20 @@
         <!-- Sidebar-->
         <div class="border-end bg-darkblue" id="sidebar-wrapper">
             <div class="sidebar-heading bg-darkblue">
-                <p class="logo" style="font-family: 'Abel', sans-serif; font-size: 35px;">OurSejahtera</p>
+                <p class="logo" style="font-family: 'Abel', sans-serif; font-size: 35px;">QM Print</p>
             </div>
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3"
-                    href="dashboard_user.html">Dashboard</a>
+                    href="dashboard.html">Dashboard</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3"
-                    href="profile_user.html">Profile</a>
+                    href="display_stand.html">Display Stand</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3"
-                    href="message_user.html">Messages</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Items to be
-                    Received</a>
+                    href="message_user.html">Fabric System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Promotion System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Display System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Tension System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Accessories</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Board</a>
             </div>
         </div>
         <!-- Page content wrapper-->
@@ -49,41 +52,20 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <div class="container-fluid">
                     <img src="assets/button.png" id="sidebarToggle" style="width:35px; margin:0px 0px 0px 10px; cursor:pointer;"></img>
-                    <p style="position:absolute; top:13px; left:70px; font-size: 20px;">User</p>
-                    <div class="dropdown" style="position:absolute; top:15px; right:40px;">
-                        <p>Logged in as: 
-                            <img src="assets/user_icon.png" style="width:20px; margin:0px 0px 4px 0px;"></img>
-                             username
-                        </p>
-                        <div class="dropdown-content">
-                            <a href="login.html">
-                                <img src="assets/logout.png" style="width:20px;"></img>  Logout</a>
-                        </div>
-                    </div>
+
                 </div>
             </nav>
             <!-- Page content-->
             <div class="container-fluid" style="padding:0px 40px 0px 40px;">
-                <h1 class="mt-4">Need help?</h1>
-                <!-- <p>How long do you want to ask for help?</p>
-                    <select style="width:15%;">
-                        <option>1 hour</option>
-                        <option>2 hours</option>
-                        <option>3 hours</option>
-                        <option>6 hours</option>
-                        <option>12 hours</option>
-                        <option>1 day</option>
-                    </select>
-                    <br><br> -->
+                <h1 class="mt-4">Interested in our products?</h1>
 
-                <p>Verify your location:</p>
+                <p style="font-size: 1.5rem;">Browse product category using the sidebar</p>
+                <p style="font-size: 1.5rem; padding: 0px; margin: 0px;">Our Location: </p>
+                <p style="font-size: 1.3rem;">NO.37,JALAN 12/118B,DESA TUN RAZAK ,CHERAS 56000 KUALA LUMPUR</p>
                 <div id="map" class="rounded"></div>
                 <br>
                 <div id="select" class="container-fluid">
-                    <input type="checkbox" id="anon" checked>
-                    <label for="anon"> Remain anonymous</label>
-                    <br><br>
-                    <a href='./verify.html'><button class="btn btn-primary" id="sidebarToggle">Ask for help</button></a>
+                    <a href='https://wa.me/60126765121'><button class="btn btn-primary" id="sidebarToggle">Contact Us!</button></a>
                 </div>
             </div>
         </div>
@@ -95,16 +77,16 @@
         mapboxgl.accessToken = "pk.eyJ1IjoiZGFuMTIzNDU2IiwiYSI6ImNrMGNpYmluaTE1bnozbXBseWN6enVhaDUifQ.0ASPM9rudsbHpFrJ63_1ig";
         let map = new mapboxgl.Map({
             container: 'map',
-            center: [101.66943025633309, 3.141166637599792],
-            zoom: 15,
+            center: [101.71893, 3.08106],
+            zoom: 16,
             style: 'mapbox://styles/mapbox/streets-v11'
         });
 
-        let marker1 = new mapboxgl.Marker({ "color": "#FF8C00" });
-        marker1.setLngLat([101.66943025633309, 3.141166637599792]);
+        let marker1 = new mapboxgl.Marker({ "color": "#FF0000" });
+        marker1.setLngLat([101.71893, 3.08106]);
 
         let popup1 = new mapboxgl.Popup({ offset: 45 });
-        popup1.setText('26, Jalan Tualang');
+        popup1.setText('NO.37,JALAN 12/118B,DESA TUN RAZAK ,CHERAS 56000 KUALA LUMPUR');
         marker1.setPopup(popup1)
         // Display the marker.
         marker1.addTo(map);
