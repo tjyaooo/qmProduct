@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Promotion System</title>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bona+Nova:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        .productCardMini {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 25rem;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+            overflow: hidden;
+            margin: 5px;
+            height:30rem;
+        }
+
+        .productCard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 25rem;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+            overflow: hidden;
+            margin: 5px;
+            height:48rem;
+        }
+
+        .bigProductCard{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 51rem;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+            overflow: hidden;
+            margin: 5px;
+            height:46rem;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+
+        .product_row {
+            max-width: 70rem;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .description {
+            letter-spacing: 1.5px;
+            font-size:14px;
+        }
+
+        p{
+            padding:0.01rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-darkblue" id="sidebar-wrapper" style="height:700rem;">
+            <div class="sidebar-heading bg-darkblue">
+                <p class="logo" style="font-family: 'Abel', sans-serif; font-size: 35px;">QM Print</p>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="index.html">Dashboard</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="display_stand.html">Display Stand</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="fabric_system.html">Fabric System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="promotion_system.html">Promotion System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Display System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Tension System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Accessories</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="item.html">Board</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <img src="assets/button.png" id="sidebarToggle"
+                        style="width:35px; margin:0px 0px 0px 10px; cursor:pointer;"></img>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <h1 style="padding: 20px 0px 0px 50px;">Promotion System</h1>
+            <div class="product_row">
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/ECONOMIC_FABRIC_COUNTER.png">
+                    </div>
+                    <h1>Economic Fabric Counter</h1>
+                    <p class="price">RM 230 [ RM 300 inc. printing ]</p>
+                    <p class="description">Code: EFC</p>
+                    <p class="description">Size: Printing - (W) 160cm x (H) 90cm</p>
+                    <p class = "description">Weight: 8 KG</p>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/ECONOMIC_FABRIC_COUNTER_PLAN.png">
+                    </div>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/PROMOTION_TABLE_STRAIGHT.png">
+                    </div>
+                    <h1>Promotion Table Straight</h1>
+                    <p class="price">RM 300 [ RM 360 inc. printing ]</p>
+                    <p class="description">Code: PT-H</p>
+                    <p class="description">Size: Printing - (W) 180.5cm x (H) 90cm</p>
+                    <p class = "description">Weight: 14.1 KG</p>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/PROMOTION_TABLE_STRAIGHT_PLAN.png">
+                    </div>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/ALUMINIUM_PROMOTION_TABLE.png">
+                    </div>
+                    <h1>Aluminium Promotion Table</h1>
+                    <p class="price">RM 240 [ RM 300 inc. printing ]</p>
+                    <p class="description">Code: APT</p>
+                    <p class="description">Size 1: Printing - Top - (W) 60.5cm x (H) 25.5cm</p>
+                    <p class="description">Size 2: Printing - Center - (W) 50.5cm x (H) 86.5cm</p>
+                    <p class="description">Size 3: Printing - Side - (W) 23cm x (H) 86.5cm</p>
+                    <p class = "description">Weight: 10.2 KG</p>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/ALUMINIUM_PROMOTION_TABLE_PLAN.png">
+                    </div>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/ALUMINIUM_PROMOTION_TABLE_A.png">
+                    </div>
+                    <h1>Aluminium Promotion Table - A</h1>
+                    <p class="price">RM 240 [ RM 300 inc. printing ]</p>
+                    <p class="description">Code: APT W/O WHEEL</p>
+                    <p class="description">Size 1: Printing - Top - (W) 60cm x (H) 25cm</p>
+                    <p class="description">Size 2: Printing - Center - (W) 50.5cm x (H) 85.5cm</p>
+                    <p class="description">Size 3: Printing - Side - (W) 23cm x (H) 85.5cm</p>
+                    <p class = "description">Weight: 10.2 KG</p>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/ALUMINIUM_PROMOTION_TABLE_A_PLAN.png">
+                    </div>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/IRON_PROMOTION_TABLE.png">
+                    </div>
+                    <h1>Iron Promotion Table - A</h1>
+                    <p class="price">RM 100 [ RM 150 inc. printing ]</p>
+                    <p class="description">Code: IPT</p>
+                    <p class="description">Size 1: Printing - Top - (W) 80cm x (H) 20cm</p>
+                    <p class="description">Size 2: Printing - Center - (W) 70cm x (H) 70cm</p>
+                    <p class="description">Size 3: Printing - Side - (W) 30cm x (H) 70cm</p>
+                    <p class = "description">Weight: 7.3 KG</p>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/IRON_PROMOTION_TABLE_PLAN.png">
+                    </div>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/PROMOTION_TABLE_SQUARE.png">
+                    </div>
+                    <h1>Promotion Table Square</h1>
+                    <p class="price">RM 140 [ RM 180 inc. printing ]</p>
+                    <p class="description">Code: PT</p>
+                    <p class="description">Size 1: Printing - Top - (W) 80.1cm x (H) 29.21cm</p>
+                    <p class="description">Size 2: Printing - Bottom - (W) 182cm x (H) 81cm</p>
+                    <p class = "description">Weight: 7 KG</p>
+                    <div style="width:100%;height:30%; overflow: hidden;">
+                        <img src="assets/product_images/PROMOTION_TABLE_SQUARE_PLAN.png">
+                    </div>
+                </div>
+
+                <div class="productCardMini rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/IRON_BROCHURE_TABLE.png">
+                    </div>
+                    <h1>Iron Brochure Table</h1>
+                    <p class="price">RM 200 </p>
+                    <p class="description">Code: IBT</p>
+                    <p class="description">Size: Printing - A3 size</p>
+                    <p class = "description">Weight: 5 KG</p>
+                </div>
+
+                <div class="productCardMini rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/DISPLAY_TWISTER_COUNTER.png">
+                    </div>
+                    <h1>Display Twister Counter</h1>
+                    <p class="price">RM 550 [ RM 600 inc. printing ] </p>
+                    <p class="description">Code: DC</p>
+                    <p class="description">Size: Printing - (W) 16cm x (H) 47cm - 6pcs</p>
+                    <p class = "description">Weight: 10.1 KG</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
