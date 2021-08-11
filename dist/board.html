@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Board</title>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bona+Nova:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        .productCard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 25rem;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+            overflow: hidden;
+            margin: 5px;
+            height: 34rem;
+        }
+
+        .bigProductCard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 51rem;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+            overflow: hidden;
+            margin: 5px;
+            height: 54rem;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+
+        .product_row {
+            max-width: 70rem;
+            margin: auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .description {
+            letter-spacing: 1.5px;
+            font-size: 14px;
+        }
+
+        p {
+            padding: 0.01rem;
+        }
+
+
+        @media screen and (max-width: 425px) {
+
+            .productCardMini {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                display: inline-block;
+                overflow: hidden;
+                height: 30rem;
+            }
+
+            .productCard {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                display: inline-block;
+                overflow: hidden;
+                height: auto;
+            }
+
+            .bigProductCard {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                display: inline-block;
+                overflow: hidden;
+                height: auto;
+            }
+
+            .price {
+                color: grey;
+                font-size: 18px;
+            }
+
+
+            .product_row {
+                width: 100%;
+                margin: auto;
+                padding: 2rem;
+            }
+
+            .description {
+                letter-spacing: 1px;
+                font-size: 14px;
+            }
+
+            p {
+                padding: 0.01rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-darkblue" id="sidebar-wrapper" style="height:700rem;">
+            <div class="sidebar-heading bg-darkblue">
+                <p class="logo" style="font-family: 'Abel', sans-serif; font-size: 35px;">QM Print</p>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="index.html">Dashboard</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="display_stand.html">Display Stand</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="fabric_system.html">Fabric System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="promotion_system.html">Promotion System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="display_system.html">Display System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="tension_system.html">Tension System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="accessories.html">Accessories</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="board.html">Board</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <img src="assets/button.png" id="sidebarToggle"
+                        style="width:35px; margin:0px 0px 0px 10px; cursor:pointer;"></img>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <h1 style="text-align: center;">Board</h1>
+            <div class="product_row">
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/POPUP_RIGID.png">
+                    </div>
+                    <h1>Pop Up Rigid</h1>
+                    <p class="price">78cm - RM 25</p>
+                    <p class="price">90cm - RM 30</p>
+                    <p class="description">Code: PVC FILM (B)-90CM / PVC FILM (B)-78CM</p>
+                    <p class="description">Size 1: (W) 78cm x (H) 235cm</p>
+                    <p class="description">Size 2: (W) 90cm x (H) 240cm</p>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/MAGNET.png">
+                    </div>
+                    <h1>Magnet</h1>
+                    <p class="price">RM 250</p>
+                    <p class="description">Code: MAGNET SHEET</p>
+                    <p class="description">Size: (W) 600mm x (H) 15m x (D) 0.6mm</p>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/HI_IMPACT.png">
+                    </div>
+                    <h1>HI Impact (HI)</h1>
+                    <p class="price">(1mm) RM 45</p>
+                    <p class="price">(2mm) RM 90</p>
+                    <p class="description">Code: HIGHIMPACT / HIGH IMPACT</p>
+                    <p class="description">Size 1: (1mm) - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 2: (2mm) - (W) 4ft x (H) 8ft</p>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/FOAMBOARD.png">
+                    </div>
+                    <h1>Foamboard</h1>
+                    <p class="price">(5mm) RM 30</p>
+                    <p class="price">(10mm) RM 60</p>
+                    <p class="description">Code: FB</p>
+                    <p class="description">Size 1: (5mm) (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 2: (10mm) - (W) 4ft x (H) 8ft</p>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/KT_BOARD.png">
+                    </div>
+                    <h1>KT Board</h1>
+                    <p class="price">(4ft x 8ft / 4ft x 6ft) RM 18</p>
+                    <p class="description">Code: KT BOARD</p>
+                    <p class="description">Size 1: (5mm) - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 2: (5mm) - (W) 4ft x (H) 6ft</p>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/PPBOARD.png">
+                    </div>
+                    <h1>PP Board</h1>
+                    <p class="price">(3mm) RM 25, (5mm - (H) 8ft) RM 35</p>
+                    <p class="price">(5mm - (H) 20ft) RM 90</p>
+                    <p class="description">Code: PPB</p>
+                    <p class="description">Size 1: (3mm) - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 2: (5mm) - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 3: (5mm) - (W) 4ft x (H) 20ft</p>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/POLYCARBONATE.png">
+                    </div>
+                    <h1>Polycarbonate</h1>
+                    <p class="price">(3FT & 4FT) - RM 4 per sqft </p>
+                    <p class="price">(5FT , 6FT & 7FT) - RM 4.50 per sqft</p>
+                    <p class="description">Code: POLY</p>
+                    <p class="description">Size: Minimum 3ft x 4ft</p>
+                </div>
+
+                <div class="productCard rounded">
+                    <br>
+                    <div style="width:100%;height:40%; overflow: hidden;">
+                        <img src="assets/product_images/ACRYLIC_BOARD.png">
+                    </div>
+                    <h1>Acrylic Board</h1>
+                    <p class="price">(3mm) RM 140 </p>
+                    <p class="price">(5mm) RM 220</p>
+                    <p class="description">Code: AB</p>
+                    <p class="description">Size 1: (3mm) - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 2: (5mm) - (W) 4ft x (H) 8ft</p>
+                </div>
+
+                <div class="bigProductCard rounded">
+                    <br>
+                    <div style="width:100%;height:22%; overflow: hidden;">
+                        <img src="assets/product_images/PVC_BOARD.png">
+                    </div>
+                    <h1>PVC Board (PVCB)</h1>
+                    <p class="price">1mm - RM 30, 2mm - RM35</p>
+                    <p class="price">3mm - RM 40, 4mm - RM55</p>
+                    <p class="price">5mm - RM 66, 10mm - RM132</p>
+                    <p class="price">20mm - RM 264, 25mm - RM330</p>
+                    <p class="description">Code: PVCB</p>
+                    <p class="description">Size 1: 1mm - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 2: 2mm - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 3: 3mm - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 4: 4mm - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 5: 5mm - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 6: 10mm - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 7: 20mm - (W) 4ft x (H) 8ft</p>
+                    <p class="description">Size 8: 25mm - (W) 4ft x (H) 8ft</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
