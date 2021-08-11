@@ -25,7 +25,7 @@
             display: inline-block;
             overflow: hidden;
             margin: 5px;
-            height:30rem;
+            height: 30rem;
         }
 
         .productCard {
@@ -37,10 +37,10 @@
             display: inline-block;
             overflow: hidden;
             margin: 5px;
-            height:45rem;
+            height: 48rem;
         }
 
-        .bigProductCard{
+        .bigProductCard {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             width: 63rem;
             margin: auto;
@@ -49,6 +49,8 @@
             display: inline-block;
             overflow: hidden;
             margin: 5px;
+            height: 67rem;
+
         }
 
         .price {
@@ -61,17 +63,76 @@
             max-width: 70rem;
             margin: auto;
             padding: 2rem;
+            text-align: center;
         }
 
         .description {
             letter-spacing: 1.5px;
-            font-size:14px;
+            font-size: 14px;
         }
 
-        p{
-            padding:0.01rem;
+        p {
+            padding: 0.01rem;
         }
 
+
+        @media screen and (max-width: 425px) {
+
+            .productCardMini {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                display: inline-block;
+                overflow: hidden;
+                height: 30rem;
+            }
+
+            .productCard {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                display: inline-block;
+                overflow: hidden;
+                height: auto;
+            }
+
+            .bigProductCard {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                display: inline-block;
+                overflow: hidden;
+                height: auto;
+            }
+
+            .price {
+                color: grey;
+                font-size: 17px;
+            }
+
+
+            .product_row {
+                width: 100%;
+                margin: auto;
+                padding: 2rem;
+            }
+
+            .description {
+                letter-spacing: 1px;
+                font-size: 14px;
+            }
+
+            p {
+                padding: 0.01rem;
+            }
+
+        }
     </style>
 </head>
 
@@ -89,10 +150,14 @@
                     href="display_stand.html">Display Stand</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3"
                     href="fabric_system.html">Fabric System</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="promotion_system.html">Promotion System</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="display_system.html">Display System</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="tension_system.html">Tension System</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="accessories.html">Accessories</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="promotion_system.html">Promotion System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="display_system.html">Display System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="tension_system.html">Tension System</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="accessories.html">Accessories</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="board.html">Board</a>
             </div>
         </div>
@@ -119,9 +184,10 @@
                     <p class="description">Code: POP UP-3X4C / POP UP-3X4C</p>
                     <p class="description">Size: Printing - (3x3) - (W) 344cm x (H) 232cm</p>
                     <p class="description">Size: Printing - (3x4) - (W) 414cm x (H) 232cm</p>
-                    <p class = "description">Weight: 26.2 KG</p>
+                    <p class="description">Weight: 26.2 KG</p>
                     <div style="width:100%;height:30%; overflow: hidden;">
-                        <img src="assets/product_images/POPUP_CURVE_PLAN.png">
+                        <img style="width: 100%; height:100%; object-fit: contain;"
+                            src="assets/product_images/POPUP_CURVE_PLAN.png">
                     </div>
                 </div>
 
@@ -134,15 +200,16 @@
                     <p class="price">RM 300 [ RM 360 inc. printing ]</p>
                     <p class="description">Code: : PPT</p>
                     <p class="description">Size: Printing - (W) 228cm x (H) 87cm</p>
-                    <p class = "description">Weight: 15.3 KG</p>
+                    <p class="description">Weight: 15.3 KG</p>
                     <div style="width:100%;height:30%; overflow: hidden;">
-                        <img src="assets/product_images/POPUP_PROMOTION_TABLE_PLAN.png">
+                        <img style="width: 100%; height:100%; object-fit: contain;"
+                            src="assets/product_images/POPUP_PROMOTION_TABLE_PLAN.png">
                     </div>
                 </div>
 
                 <div class="bigProductCard rounded">
                     <br>
-                    <div style="width:100%;height:25%; overflow: hidden;">
+                    <div style="width:100%;height:20%; overflow: hidden;">
                         <img src="assets/product_images/POPUP_STRAIGHT.png">
                     </div>
                     <h1>Pop Up Straight</h1>
@@ -153,9 +220,10 @@
                     <p class="description">Size: Printing - (2x3) - (W) 284cm x (H) 232cm</p>
                     <p class="description">Size: Printing - (3x3) - (W) 359cm x (H) 232cm</p>
                     <p class="description">Size: Printing - (3x4) - (W) 434cm x (H) 232cm</p>
-                    <p class = "description">Weight: 26.2 KG</p>
-                    <div style="width:100%;height:30%; overflow: hidden;">
-                        <img src="assets/product_images/POPUP_STRAIGHT_PLAN.png">
+                    <p class="description">Weight: 26.2 KG</p>
+                    <div style="text-align:center; width:100%; height:45%; overflow:hidden;">
+                        <img style="width: 100%; height:100%; object-fit: scale-down;"
+                            src="assets/product_images/POPUP_STRAIGHT_PLAN.png">
                     </div>
                 </div>
 
@@ -190,9 +258,10 @@
                     <p class="price">RM 400 [ RM 500 inc. printing ]</p>
                     <p class="description">Code: : CASING</p>
                     <p class="description">Size: Printing - (W) 184cm x (H) 80cm</p>
-                    <p class = "description">Weight: 12.1 KG</p>
+                    <p class="description">Weight: 12.1 KG</p>
                     <div style="width:100%;height:30%; overflow: hidden;">
-                        <img src="assets/product_images/HARD_CASING_PLAN.png">
+                        <img style="width: 100%; height:100%; object-fit: scale-down;"
+                            src="assets/product_images/HARD_CASING_PLAN.png">
                     </div>
                 </div>
             </div>

@@ -47,9 +47,10 @@
 
 
         .product_row {
-            max-width: 70rem;
+            max-width: 900px;
             margin: auto;
             padding: 2rem;
+            text-align: center;
         }
 
         .description {
@@ -59,6 +60,52 @@
 
         p{
             padding:0.01rem;
+        }
+
+        @media screen and (max-width: 425px) {
+            .productCard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+            overflow: hidden;
+            height:auto;
+        }
+
+        .bigProductCard{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+            overflow: hidden;
+            height:auto;
+        }
+
+        .price {
+            color: grey;
+            font-size: 18px;
+        }
+
+
+        .product_row {
+            width:100%;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .description {
+            letter-spacing: 1px;
+            font-size:12.5px;
+        }
+
+        p{
+            padding:0.01rem;
+        }
+
         }
 
     </style>
@@ -174,7 +221,21 @@
                     <p class="description">Size 3: Stand - (W) 30in / 33in x (H) 5m</p>
                     <p class = "description">Weight: 4 KG</p>
                 </div>
-
+                
+                <div class="bigProductCard rounded">
+                    <br>
+                    <div style="width:100%;height:50%; overflow: hidden;">
+                        <img src="assets/product_images/ALUMINIUM_LIGHTBOX_FRAME.png">
+                    </div>
+                    <h1>Aluminium Lightbox Frame</h1>
+                    <p class="price">(1 in) - RM 80, (2 in) - RM 140</p>
+                    <p class = "price">(Single/Double Side - 3 in) - RM 180</p>
+                    <p class="price">(4 in) - RM 250</p>
+                    <p class="price">(Single / Double Side - 5 in) - RM 300</p>
+                    <p class="description">Code:  ALUM(H)-1’’X6M / ALUM-5CMX6M / ALUM-8CMX6M / ALUM-10CMX6M / ALUM-12CMX6M</p>
+                    <p class="description">Size: (W) 1in / 2in / 3in / 4in / 5in x (L) 6m </p>
+                </div>
+                <br>
                 <div class="productCard rounded">
                     <br>
                     <div style="width:100%;height:40%; overflow: hidden;">
@@ -223,18 +284,7 @@
                     <p class = "description">Weight: 0.5 KG</p>
                 </div>
 
-                <div class="bigProductCard rounded">
-                    <br>
-                    <div style="width:100%;height:55%; overflow: hidden;">
-                        <img src="assets/product_images/ALUMINIUM_LIGHTBOX_FRAME.png">
-                    </div>
-                    <h1>Aluminium Lightbox Frame</h1>
-                    <p class="price">(1 in) - RM 80, (2 in) - RM 140</p>
-                    <p class = "price">(Single/Double Side - 3 in) - RM 180</p>
-                    <p class="price">(4 in) - RM 250, (Single / Double Side - 5 in) - RM 300</p>
-                    <p class="description">Code:  ALUM(H)-1’’X6M / ALUM-5CMX6M / ALUM-8CMX6M / ALUM-10CMX6M / ALUM-12CMX6M</p>
-                    <p class="description">Size: (W) 1in / 2in / 3in / 4in / 5in x (L) 6m </p>
-                </div>
+
 
             </div>
         </div>
